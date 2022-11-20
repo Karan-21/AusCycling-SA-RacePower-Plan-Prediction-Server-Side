@@ -1,0 +1,30 @@
+{
+    "name": "server",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "format": "prettier --write \"./src/**/*.{js,json}\"",
+        "prepare": " cd .. && husky install server/.husky",
+        "dev": "nodemon src/app.js"
+    },
+    "devDependencies": {
+        "husky": "^8.0.0",
+        "nodemon": "^2.0.19",
+        "prettier": "2.7.1",
+        "pretty-quick": "^3.1.3"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "express": "^4.18.1",
+        "express-fileupload": "^1.4.0",
+        "express-session": "^1.17.3",
+        "firebase": "^9.9.3",
+        "firebase-admin": "^11.0.1",
+        "formidable": "^2.0.1",
+        "morgan": "^1.10.0",
+        "python-shell": "^3.0.1",
+        "uuid": "^9.0.0"
+    }
+}
